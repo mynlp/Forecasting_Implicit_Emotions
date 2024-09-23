@@ -5,7 +5,7 @@ Yurie Koga, Shunsuke Kando, Yusuke Miyao. [Forecasting Implicit Emotions Elicite
 
 ## Setup
  - Install Python 3.8.0
- - Run ```pip install -r requirements.txt```
+ - Run ```pip install -r requirements_distilroberta.txt``` for experiments with DistilRoBERTa, and ```pip install -r requirements_llama2.txt``` for experiments with Llama 2.
 
 ## Dataset
 ### DailyDialog
