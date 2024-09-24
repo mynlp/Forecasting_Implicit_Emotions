@@ -11,7 +11,7 @@ model_ckpt = "distilroberta-base"
 tokenizer = AutoTokenizer.from_pretrained(model_ckpt, truncation_side='left')
 
 # load data
-emotions = pd.read_csv("dailydialog/data_preproc.csv")[["split", "history", "utterance", "next_uttr_emotion"]]
+emotions = pd.read_csv("dailydialog/data_preproc_next_emotion.csv")[["split", "history", "utterance", "next_uttr_emotion"]]
 
 def tokenize(batch):
     return tokenizer(batch["text"], padding=True, truncation=True)

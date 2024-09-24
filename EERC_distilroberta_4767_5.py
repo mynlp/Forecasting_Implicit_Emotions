@@ -11,9 +11,9 @@ model_ckpt = "distilroberta-base"
 tokenizer = AutoTokenizer.from_pretrained(model_ckpt, truncation_side='left')
 
 # load data
-emotions_train_valid = pd.read_csv("dailydialog/data_preproc_task1.csv")
+emotions_train_valid = pd.read_csv("dailydialog/data_preproc.csv")
 emotions_train_valid = emotions_train_valid[emotions_train_valid["split"]!="test"][["split", "history", "utterance", "emotion"]]
-emotions_test = pd.read_csv("dailydialog/data_preproc.csv")
+emotions_test = pd.read_csv("dailydialog/data_preproc_next_emotion.csv")
 emotions_test = emotions_test[emotions_test["split"]=="test"][["split", "history", "next_utterance", "next_uttr_emotion"]]
 
 def tokenize(batch):
