@@ -1,6 +1,6 @@
 # Forecasting Implicit Emotions Elicited in Conversations
 
-This is the implementation code of: 
+This is the implementation code of:  
 Yurie Koga, Shunsuke Kando, Yusuke Miyao. [Forecasting Implicit Emotions Elicited in Conversations.](https://aclanthology.org/2024.inlg-main.12/) INLG2024.
 
 ## Setup
