@@ -22,9 +22,9 @@ primaryto3 = {
     "disgust": "negative",
     "anger": "negative"
 }
-emotions_train_valid = pd.read_csv("MEmoR/data_preproc_task1.csv").replace({'elicited_emotion': primaryto3})
+emotions_train_valid = pd.read_csv("memor/data_preproc_task1.csv").replace({'elicited_emotion': primaryto3})
 emotions_train_valid = emotions_train_valid[emotions_train_valid["split"]!="test"][["split", "history", "next_utterance", "elicited_emotion"]]
-emotions_test = pd.read_csv("MEmoR/test_data.csv").replace({'elicited_emotion': primaryto3})
+emotions_test = pd.read_csv("memor/test_data.csv").replace({'elicited_emotion': primaryto3})
 emotions_test = emotions_test[["split", "history", "next_utterance", "elicited_emotion"]]
 emotions = pd.concat([emotions_train_valid, emotions_test], ignore_index=True)
 
