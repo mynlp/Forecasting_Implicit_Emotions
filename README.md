@@ -18,7 +18,7 @@ python process_data_next_emotion.py
 ```
 
 ### Reconstructed MEmoR
-
+You will be able to download the original reconstructed MEmoR dataset from [here](https://github.com/taolusi/EECVAE).
 
 ## Citation
 ```
