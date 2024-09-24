@@ -5,12 +5,13 @@ Yurie Koga, Shunsuke Kando, Yusuke Miyao. [Forecasting Implicit Emotions Elicite
 
 ## Setup
  - Install Python 3.8.0
- - Run ```pip install -r requirements_distilroberta.txt``` for experiments with DistilRoBERTa, and ```pip install -r requirements_llama2.txt``` for experiments with Llama 2.
+ - Run ```pip install -r requirements_distilroberta.txt``` for experiments with DistilRoBERTa,  
+ and ```pip install -r requirements_llama2.txt``` for experiments with Llama 2.
 
 ## Dataset Preprocessing
 ### DailyDialog
 You can download the original DailyDialog dataset from [here](http://yanran.li/dailydialog).  
-Place the dataset in the `dailydialog` folder and run the following commands.
+Place the dataset in the `dailydialog` folder and run the following commands there.
 ```
 python process_data.py
 python process_data_next_emotion.py
